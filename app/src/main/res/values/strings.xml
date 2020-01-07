@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">葫芦</string>
+    <string name="common_pending">等待</string>
+    <!-- add by houxiansheng 2019-12-5 15:58:46 个人信息 -->
+    <string name="personal_info_guidang_capacity">光容量</string>
+    <string name="personal_info_disk_capacity">磁容量</string>
+    <string name="personal_info_capacity_space">容量空间</string>
+    <string name="personal_info_item_huluVip">葫芦会员</string>
+    <string name="personal_info_item_set">个人设置</string>
+    <string name="personal_info_item_inviteFriend">邀请好友使用</string>
+    <string name="personal_info_item_reward_capacity">奖励空间容量</string>
+    <string name="personal_info_item_real_name_authentication">实名认证</string>
+    <string name="personal_info_item_recycle_bin">回收站</string>
+    <string name="personal_info_item_user_feedback">用户反馈</string>
+    <!--add by houxiansheng 2019-12-5 17:03:42 容量显示-->
+    <string name="capacity">容量显示</string>
+
+    <!-- add by houxiansheng 2019-12-13 15:28:58 分享用到的Provider -->
+    <string name="file_provider_authority">org.calabashandroid.files</string>
+
+    <!-- add by houxiansheng 2019-12-10 14:07:13 传输列表 -->
+    <string name="tv_transfer_title_num">%1$s(%2$d)</string>
+    <string name="select_count">已选择%1$s个文件</string>
+
+
+</resources>

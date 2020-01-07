@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_normal_title" />
+
+    <include
+        layout="@layout/include_select_title"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="13dp"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_search_bg"
+            android:drawableLeft="@mipmap/frg_file_search"
+            android:drawablePadding="17dp"
+            android:gravity="center_vertical"
+            android:hint="搜索：照片、文件"
+            android:paddingLeft="17dp"
+            android:textColor="#A6A8B4"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivFileEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/frg_file_edit" />
+    </LinearLayout>
+
+    <include layout="@layout/include_empty_page_no_upload" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyVideo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/include_edit_bottom" />
+    </LinearLayout>
+
+</LinearLayout>

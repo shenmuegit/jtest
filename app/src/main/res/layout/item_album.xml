@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/frRoot"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:background="@drawable/album_item_bg">
+
+        <ImageView
+            android:id="@+id/ivThumbnail"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom"
+            android:background="#d6FBD22C">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="13dp"
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

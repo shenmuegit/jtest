@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffafafa"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@drawable/personal_info_bg_top"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="33dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/personal_icon_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="葫芦818"
+                        android:textColor="#0A0805"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:text="818-818-818"
+                        android:textColor="#4D516A"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/arrow_right_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/personal_info_guidang_capacity"
+                            android:textColor="#ff4d516a"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_capacity_guang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="56G/100G"
+                            android:textColor="#ff4d516a"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+                        android:id="@+id/progressbar_guang"
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp"
+                        android:layout_marginTop="4dp"
+                        app:zpb_bg_color="#FFFFFF"
+                        app:zpb_max="100"
+                        app:zpb_padding="0dp"
+                        app:zpb_pb_color="#83C2F4"
+                        app:zpb_progress="65" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/personal_info_disk_capacity"
+                            android:textColor="#ff4d516a"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_capacity_ci"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="56G/100G"
+                            android:textColor="#ff4d516a"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+                        android:id="@+id/progressbar_ci"
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp"
+                        android:layout_marginTop="4dp"
+                        app:zpb_bg_color="#FFFFFF"
+                        app:zpb_max="100"
+                        app:zpb_padding="0dp"
+                        app:zpb_pb_color="#FFAF61"
+                        app:zpb_progress="65" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_capacity_space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/personal_info_capacity_space"
+                    android:textColor="#ff4d516a"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="9dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_vip"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/personal_info_bg_item"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/personal_info_vip" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/personal_info_item_huluVip"
+                    android:textColor="#ff0a0805"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/personal_info_arrow_right" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_personal_set"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/personal_info_bg_item"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/personal_info_set" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/personal_info_item_set"
+                    android:textColor="#ff0a0805"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/personal_info_arrow_right" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_inviteFriend"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/personal_info_bg_item"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/personal_info_invite" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:text="@string/personal_info_item_inviteFriend"
+                    android:textColor="#ff0a0805"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="28dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/personal_info_item_reward_capacity"
+                    android:textColor="#ff8a8a8d"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/personal_info_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/personal_info_bg_item"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/personal_info_real_name" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:text="@string/personal_info_item_real_name_authentication"
+                    android:textColor="#ff0a0805"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/personal_info_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/personal_info_bg_item"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/personal_info_recycle_bin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:text="@string/personal_info_item_recycle_bin"
+                    android:textColor="#ff0a0805"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/personal_info_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/personal_info_bg_item"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/personal_info_feedback" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:text="@string/personal_info_item_user_feedback"
+                    android:textColor="#ff0a0805"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/personal_info_arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

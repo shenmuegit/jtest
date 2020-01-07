@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="6dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_back" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="葫芦备份"
+            android:textColor="#0A0805"
+            android:textSize="22sp" />
+
+        <!--  <ImageView
+              android:id="@+id/ivUpload"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="7dp"
+              android:layout_marginRight="23dp"
+              android:src="@mipmap/frg_file_upload" />
+
+          <ImageView
+              android:id="@+id/ivTransfer"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@id/ivUpload"
+              android:layout_marginTop="7dp"
+              android:layout_marginRight="14dp"
+              android:layout_toLeftOf="@id/ivUpload"
+              android:src="@mipmap/frg_file_transfer" />-->
+    </LinearLayout>
+
+    <include layout="@layout/include_select_title" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="13dp"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_search_bg"
+            android:drawableLeft="@mipmap/frg_file_search"
+            android:drawablePadding="17dp"
+            android:gravity="center_vertical"
+            android:hint="搜索：照片、文件"
+            android:paddingLeft="17dp"
+            android:textColor="#A6A8B4"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivFileEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/frg_file_edit" />
+    </LinearLayout>
+
+    <include layout="@layout/include_empty_page_no_upload" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyFiles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/include_backup_edit_bottom" />
+    </LinearLayout>
+
+</LinearLayout>

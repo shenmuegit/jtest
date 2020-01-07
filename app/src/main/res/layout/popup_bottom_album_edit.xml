@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlSelectFile"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/frg_file_table_first_row_bg2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/bottom_popup_select_black"
+            android:drawablePadding="14dp"
+            android:text="选择文件"
+            android:textColor="@drawable/bottom_popup_text_color_selector"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlStandardMode"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/frg_file_table_row_bg">
+
+        <TextView
+            android:id="@+id/tv_standard_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/bottom_popup_grid_black"
+            android:drawablePadding="14dp"
+            android:text="标准模式"
+            android:textColor="@drawable/bottom_popup_text_color_selector"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_standard_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_standard_mode"
+            android:src="@drawable/bottom_popup_duigou"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBigBitmapMode"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/frg_file_table_row_bg">
+
+        <TextView
+            android:id="@+id/tv_big_bitmap_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/bottom_popup_big_bitmap_black"
+            android:drawablePadding="14dp"
+            android:text="大图模式"
+            android:textColor="@drawable/bottom_popup_text_color_selector"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_big_bitmap_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_big_bitmap_mode"
+            android:src="@drawable/bottom_popup_duigou"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

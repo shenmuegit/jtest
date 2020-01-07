@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="#ffeeeeee" />
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="14dp"
+        android:background="@drawable/common_search_bg"
+        android:drawableLeft="@mipmap/frg_file_search"
+        android:drawablePadding="7dp"
+        android:gravity="center_vertical"
+        android:hint="搜索：照片、文件"
+        android:paddingLeft="18dp"
+        android:textColor="#A6A8B4"
+        android:textSize="14sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/move_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_corners_edit_file_bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/tv_move_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners_10_fff0f0f0"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_move_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners_10_fffdd329"
+            android:gravity="center"
+            android:text="移动"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

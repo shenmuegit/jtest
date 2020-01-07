@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/actMainBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/frg_home_bg"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/actMainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <RadioGroup
+            android:id="@+id/actMainRg"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@drawable/main_rg_bg"
+            android:elevation="13dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp">
+
+            <com.ehualu.calabashandroid.widget.DrawableCenterRadioButton
+                android:id="@+id/actMainRbHome"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_tab_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/home_selector"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <com.ehualu.calabashandroid.widget.DrawableCenterRadioButton
+                android:id="@+id/actMainRbStorage"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_tab_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/file_selector"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <com.ehualu.calabashandroid.widget.DrawableCenterRadioButton
+                android:id="@+id/actMainRbMsg"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_tab_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/message_selector"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <com.ehualu.calabashandroid.widget.DrawableCenterRadioButton
+                android:id="@+id/actMainRbMine"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_tab_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/user_selector"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</FrameLayout>

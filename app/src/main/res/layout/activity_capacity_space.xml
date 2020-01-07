@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffafafa"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_left" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="#ffeeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/capacity_bg"
+        android:orientation="vertical"
+        android:paddingTop="29dp"
+        android:paddingBottom="34dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="光容量"
+                android:textColor="#ff00062a"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56G/100G  56%"
+                android:textColor="#8A8A8D"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="23dp"
+            app:zpb_bg_color="#fff0f0f0"
+            app:zpb_max="100"
+            app:zpb_padding="0dp"
+            app:zpb_pb_color="#246BF1"
+            app:zpb_progress="65" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="15dp"
+            android:background="#ffeeeeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="磁容量"
+                android:textColor="#ff00062a"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56G/100G  56%"
+                android:textColor="#8A8A8D"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="23dp"
+            app:zpb_bg_color="#fff0f0f0"
+            app:zpb_max="100"
+            app:zpb_padding="0dp"
+            app:zpb_pb_color="#fffdd329"
+            app:zpb_progress="65" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="31dp"
+        android:text="备注：\n我是蓝光描述我是蓝光描述我是蓝光描述我是蓝光描述\n我是蓝光描述我是蓝光描述我是蓝光描述我是蓝光描述\n\n\n我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述我是磁描述"
+        android:textColor="#8A8A8D"
+        android:textSize="12sp" />
+</LinearLayout>
